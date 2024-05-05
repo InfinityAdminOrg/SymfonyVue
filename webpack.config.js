@@ -6,8 +6,8 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
     Encore.configureRuntimeEnvironment(process.env.NODE_ENV || "dev");
 }
 
-Encore.setOutputPath("../assets/js")
-    .setPublicPath("/assets/js")
+Encore.setOutputPath("infinity-vue")
+    .setPublicPath("infinity-vue")
     .addEntry("app", "./src/main.ts")
 
     .splitEntryChunks()

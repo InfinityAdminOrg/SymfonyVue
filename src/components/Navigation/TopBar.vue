@@ -22,24 +22,24 @@ async function logout() {
 
         <v-spacer />
 
-        <v-list v-if="store.isAuthenticated()">
-            <v-list-item prepend-avatar="" title="Admin" :subtitle="store.identifier" />
-        </v-list>
+<!--        <v-list v-if="store.isAuthenticated()">-->
+<!--            <v-list-item prepend-avatar="" title="Admin" :subtitle="store.identifier" />-->
+<!--        </v-list>-->
 
-        <template v-slot:append>
-            <v-menu>
-                <template v-slot:activator="{ props }">
-                    <v-btn icon v-bind="props">
-                        <v-icon>mdi-dots-vertical</v-icon>
-                    </v-btn>
-                </template>
+<!--        <template v-slot:append>-->
+<!--            <v-menu>-->
+<!--                <template v-slot:activator="{ props }">-->
+<!--                    <v-btn icon v-bind="props">-->
+<!--                        <v-icon>mdi-dots-vertical</v-icon>-->
+<!--                    </v-btn>-->
+<!--                </template>-->
 
-                <v-list>
-                    <v-list-item>
-                        <v-list-item-title @click="logout">Logout</v-list-item-title>
-                    </v-list-item>
-                </v-list>
-            </v-menu>
-        </template>
+<!--                <v-list>-->
+<!--                    <v-list-item>-->
+<!--                        <v-list-item-title @click="logout">Logout</v-list-item-title>-->
+<!--                    </v-list-item>-->
+<!--                </v-list>-->
+<!--            </v-menu>-->
+<!--        </template>-->
     </v-app-bar>
 </template>
