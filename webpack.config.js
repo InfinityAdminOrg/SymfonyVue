@@ -8,7 +8,7 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 
 Encore.setOutputPath("public")
     .setPublicPath('')
-    .setManifestKeyPrefix("bundles/infinity-admin-bundle")
+    .setManifestKeyPrefix("bundles/infinity")
     .addEntry("app", "./src/main.ts")
 
     .splitEntryChunks()
