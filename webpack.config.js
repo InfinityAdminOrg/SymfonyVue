@@ -6,8 +6,9 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
     Encore.configureRuntimeEnvironment(process.env.NODE_ENV || "dev");
 }
 
-Encore.setOutputPath("infinity-vue")
-    .setPublicPath("infinity-vue")
+Encore.setOutputPath("public")
+    .setPublicPath('')
+    .setManifestKeyPrefix("bundles/infinity-admin-bundle")
     .addEntry("app", "./src/main.ts")
 
     .splitEntryChunks()
